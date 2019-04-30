@@ -1,0 +1,8 @@
+{
+  "db": {
+    "hostname": "localhost",
+    "username": "list_user",
+    "password": "abracadabra1",
+    "database": "tissislist"
+  }
+}

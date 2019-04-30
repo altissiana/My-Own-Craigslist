@@ -1,0 +1,94 @@
+.app {
+    width: 900;
+    /* margin: auto; */
+    height: 100vh;
+}
+
+.allcats {
+    width: 1000px;
+    margin-left: 25%;
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    position: center;
+}
+
+.cat {
+    margin-left: 100px;
+}
+
+.title {
+    margin: 10px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+    font-size: 25px;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(238, 238, 238);
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    clear: none;
+    display: block;
+    float: right;
+    padding: 0;
+    font-weight: normal;
+    position: relative;
+    text-align: center;
+    width: 1050px;
+    margin-right: 540px
+}
+
+.leftbar {
+    background: rgb(244, 244, 244);
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    float: left;
+    min-height: 820px;
+    text-align: center;
+    width: 15%;
+    margin-left: 100px;
+}
+
+#logo {
+    font-size: 50px;
+}
+
+.post {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.search {
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wp {
+    color: transparent;
+    line-height: 30px;
+}
+
+li {
+    list-style-type: none;
+}
