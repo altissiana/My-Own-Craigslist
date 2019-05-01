@@ -11,9 +11,9 @@ const CategoryList = props => {
     }, [])
 
     return (
-        <div className="allcats">
+        <div id="allcats">
             {props.categories.map(cat => (
-                <div>
+                <div key={'cat' + cat.id}>
                     <h3 className="title"><Link to={`/${cat.slug}`}>{cat.name}</Link></h3>
                     <div className="cat"><ChildCategories list={cat.child_categories} /></div>
                 </div>

@@ -4,9 +4,12 @@ import store from '../store'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import '../styles/base.css'
 import CategoryList from './CategoryList'
-import ChildCategories from './ChildCategories'
+import CurrentCategory from './CurrentCategory'
+import Listing from './Listing'
 import Header from './Header'
 import LeftBar from './LeftBar'
+import RightBar from './RightBar'
+import AddListing from './AddListing'
 
 
 class App extends Component {
@@ -16,10 +19,12 @@ class App extends Component {
         <Router>
           <Header />
           <LeftBar />
-          {/* <RightBar /> */}
+          <RightBar />
           <div className="app">
-            <Route path="/" component={CategoryList} />
-            {/* <Route path="/:slug" component={ChildCategories} /> */}
+            <Route exact path="/" component={CategoryList} />
+            <Route exact path="/:slug" component={CurrentCategory} />
+            <Route path="/listing/:id" component={Listing} />
+            <Route path="/add/:categoryId" component={AddListing} />
           </div>
         </Router>
       </Provider>

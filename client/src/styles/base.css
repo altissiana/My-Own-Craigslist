@@ -1,29 +1,101 @@
-.app {
-    width: 900;
-    /* margin: auto; */
-    height: 100vh;
+html {
+    box-sizing: border-box;
 }
 
-.allcats {
-    width: 1000px;
-    margin-left: 25%;
-    padding: 20px;
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    font-family: "Arial", sans-serif;
-    position: center;
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 20px;
+    padding: 0;
 }
 
 .cat {
-    margin-left: 100px;
+    margin-left: 10px;
+}
+
+#allcats {
+    width: 10px;
+    height: 1000px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: "Arial", sans-serif;
+    margin-top: 100px;
+    margin-left: 600px;
+    position: absolute;
+}
+
+#allcats>div {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+#allcats>div:nth-child(2) {
+    border: 1px solid green;
+    margin-left: 400px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+#allcats>div:nth-child(3) {
+    border: 1px solid blue;
+    position: absolute;
+    margin-left: 725px;
+    margin-top: -30px;
+}
+
+#allcats>div:nth-child(1) {
+    border: 1px solid red;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: -30px;
+}
+
+#allcats>div:nth-child(4) {
+    border: 1px solid purple;
+    margin-left: 65px;
+    margin-top: 390px;
+    position: absolute;
+}
+
+#allcats>div:nth-child(5) {
+    border: 1px solid yellow;
+    margin-left: 400px;
+    margin-top: 280px;
+    position: absolute;
+}
+
+#allcats>div:nth-child(6) {
+    border: 1px solid orange;
+    margin-left: 65px;
+    margin-top: 920px;
+    position: absolute;
+}
+
+#allcats>div:nth-child(7) {
+    border: 1px solid aqua;
+    margin-left: 725px;
+    margin-top: 800px;
+    position: absolute;
+}
+
+#allcats>div:nth-child(8) {
+    border: 1px solid salmon;
+    margin-left: 725px;
+    margin-top: 1060px;
+    position: absolute;
 }
 
 .title {
     margin: 10px;
     height: 40px;
-    width: 250px;
+    width: 280px;
     text-align: center;
     font-weight: bold;
     border-top: 1px solid #ddd;
@@ -38,19 +110,18 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .header {
     background-color: rgb(238, 238, 238);
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
-    clear: none;
-    display: block;
     float: right;
-    padding: 0;
-    font-weight: normal;
-    position: relative;
     text-align: center;
-    width: 1050px;
-    margin-right: 540px
+    width: 940px;
+    margin-right: 540px;
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
 }
 
 .leftbar {
@@ -58,10 +129,10 @@ a:-webkit-any-link {
     border-left: 1px #ccc solid;
     border-right: 1px #ccc solid;
     float: left;
-    min-height: 820px;
+    height: 1300px;
     text-align: center;
     width: 15%;
-    margin-left: 100px;
+    margin-left: 330px;
 }
 
 #logo {
@@ -79,9 +150,10 @@ a:-webkit-any-link {
 
 .search {
     height: 50px;
-    width: 300px;
+    width: 310px;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 5px
 }
 
 .wp {
@@ -91,4 +163,35 @@ a:-webkit-any-link {
 
 li {
     list-style-type: none;
+}
+
+.rightbar {
+    float: right;
+    background: rgb(244, 244, 244);
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    height: 1300px;
+    text-align: center;
+    width: 15%;
+    margin-top: -70px;
+    margin-right: 185px;
+}
+
+.sel {
+    margin-top: 50px;
+    height: 50px;
+    width: 310px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px
+}
+
+.loc {
+    font-size: 25px
+}
+
+.lt {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder
 }

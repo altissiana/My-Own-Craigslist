@@ -44,4 +44,54 @@ categories parent_categories ON child_categories.parent_id = parent_categories.i
   })
 })
 
+router.get('/category/:slug', (req, res, next) => {
+  const sql = 'SELECT id, name FROM categories WHERE slug = ?'
+
+  db.query(sql, [req.params.slug], (err, results, fields) => {
+    res.json(results[0])
+  })
+})
+
+router.get('/listings/:categoryId', (req, res, next) => {
+  const sql = `
+  SELECT l.id, l.name, l.listing
+  FROM listings l
+  LEFT JOIN categories c ON l.category_id = c.id
+  WHERE c.id = ?
+  `
+  db.query(sql, [req.params.categoryId], (err, results, fields) => {
+    res.json(results)
+  })
+})
+
+router.get('/listing/:id', (req, res, next) => {
+  const sql = `
+  SELECT 
+  l.id, l.name, l.listing, c.slug 
+  FROM 
+  listings l
+  LEFT JOIN categories c ON l.category_id = c.id
+  WHERE l.id = ?`
+
+  db.query(sql, [req.params.id], (err, results, fields) => {
+    console.log(err)
+    res.json(results[0])
+  })
+})
+
+router.post('/listing', (req, res, next) => {
+  const sql = `
+  INSERT INTO listings (name, listing, category_id) VALUES (?, ?, ?)`
+
+  db.query(sql, [req.body.name, req.body.listing, req.body.category_id], (err, results, fields) => {
+    console.log(err)
+    res.json({
+      id: results.insertID,
+      name: req.body.name,
+      listing: req.body.listing
+    })
+  })
+
+})
+
 module.exports = router
