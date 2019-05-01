@@ -37,57 +37,57 @@ body {
 }
 
 #allcats>div:nth-child(2) {
-    border: 1px solid green;
-    margin-left: 400px;
+    /* border: 1px solid green; */
+    margin-left: 600px;
     position: absolute;
     margin-top: -30px;
 }
 
 #allcats>div:nth-child(3) {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: absolute;
-    margin-left: 725px;
+    margin-left: 920px;
     margin-top: -30px;
 }
 
 #allcats>div:nth-child(1) {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
-    margin-left: 65px;
+    margin-left: 300px;
     margin-top: -30px;
 }
 
 #allcats>div:nth-child(4) {
-    border: 1px solid purple;
-    margin-left: 65px;
+    /* border: 1px solid purple; */
+    margin-left: 300px;
     margin-top: 390px;
     position: absolute;
 }
 
 #allcats>div:nth-child(5) {
-    border: 1px solid yellow;
-    margin-left: 400px;
+    /* border: 1px solid yellow; */
+    margin-left: 600px;
     margin-top: 280px;
     position: absolute;
 }
 
 #allcats>div:nth-child(6) {
-    border: 1px solid orange;
-    margin-left: 65px;
+    /* border: 1px solid orange; */
+    margin-left: 300px;
     margin-top: 920px;
     position: absolute;
 }
 
 #allcats>div:nth-child(7) {
-    border: 1px solid aqua;
-    margin-left: 725px;
+    /* border: 1px solid aqua; */
+    margin-left: 920px;
     margin-top: 800px;
     position: absolute;
 }
 
 #allcats>div:nth-child(8) {
-    border: 1px solid salmon;
-    margin-left: 725px;
+    /* border: 1px solid salmon; */
+    margin-left: 920px;
     margin-top: 1060px;
     position: absolute;
 }
@@ -118,10 +118,15 @@ a:-webkit-any-link {
     float: right;
     text-align: center;
     width: 940px;
-    margin-right: 540px;
+    margin-right: 1000px;
     height: 70px;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
+}
+
+.header-title {
+    position: relative;
+    bottom: 30px;
 }
 
 .leftbar {
@@ -132,7 +137,7 @@ a:-webkit-any-link {
     height: 1300px;
     text-align: center;
     width: 15%;
-    margin-left: 330px;
+    margin-left: 450px;
 }
 
 #logo {
@@ -174,7 +179,7 @@ li {
     text-align: center;
     width: 15%;
     margin-top: -70px;
-    margin-right: 185px;
+    margin-right: 550px;
 }
 
 .sel {
